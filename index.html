@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Privacy Policy for Go VPN — a free, no-logs Android VPN by H93." />
+<meta name="robots" content="index, follow" />
+<title>Privacy Policy — Go VPN</title>
+<style>
+  :root {
+    --bg: #000000;
+    --surface: #0a0a0a;
+    --surface-2: #111111;
+    --border: #1c1c1c;
+    --accent: #15E07A;
+    --text: #e9e9e9;
+    --muted: #9a9a9a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 20px 80px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  header {
+    text-align: center;
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px; height: 76px;
+    border-radius: 22px;
+    background: radial-gradient(circle at 30% 30%, rgba(21,224,122,0.25), rgba(21,224,122,0.04));
+    border: 1px solid rgba(21,224,122,0.4);
+    margin-bottom: 22px;
+  }
+  .logo svg { width: 40px; height: 40px; }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  h1 .accent { color: var(--accent); }
+  header p { color: var(--muted); margin-top: 10px; font-size: 15px; }
+  .effective {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .effective strong { color: var(--accent); font-weight: 600; }
+
+  h2 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 38px 0 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 2px;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    flex: none;
+  }
+  p { color: var(--text); margin-bottom: 14px; }
+  p.lead { color: var(--muted); font-size: 16px; }
+
+  ul { list-style: none; margin: 6px 0 16px; }
+  li {
+    position: relative;
+    padding: 10px 14px 10px 40px;
+    margin-bottom: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+  }
+  li.yes::before, li.no::before {
+    position: absolute;
+    left: 14px; top: 11px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  li.yes::before { content: "✓"; color: var(--accent); }
+  li.no::before { content: "✕"; color: #ff5d5d; }
+  li strong { color: #fff; }
+
+  .callout {
+    background: linear-gradient(180deg, rgba(21,224,122,0.08), rgba(21,224,122,0.02));
+    border: 1px solid rgba(21,224,122,0.35);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin: 28px 0;
+  }
+  .callout h2 { margin-top: 0; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .third-party {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+  .third-party h3 { font-size: 15px; color: #fff; margin-bottom: 4px; }
+  .third-party p { color: var(--muted); font-size: 14px; margin: 0; }
+  .third-party a { color: var(--accent); text-decoration: none; }
+  .third-party a:hover { text-decoration: underline; }
+
+  a.mail {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(21,224,122,0.4);
+  }
+  a.mail:hover { border-bottom-color: var(--accent); }
+
+  code {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer strong { color: var(--text); }
+
+  @media (max-width: 520px) {
+    header { padding: 44px 0 32px; }
+    h1 { font-size: 25px; }
+    h2 { font-size: 17px; }
+    body { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3z"
+                stroke="#15E07A" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 12l2 2 4-4.5" stroke="#15E07A" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1>Privacy Policy — <span class="accent">Go VPN</span></h1>
+      <p>Free, no-logs VPN for Android · by H93</p>
+      <span class="effective">Effective date: <strong>June 10, 2026</strong></span>
+    </header>
+
+    <p class="lead">
+      This Privacy Policy explains how <strong>Go VPN</strong> (package
+      <code>com.h93lab.govpn</code>), provided by <strong>H93</strong>
+      (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;), handles information when you use our
+      Android application. We built Go VPN to be private by design: we do
+      <strong>not</strong> log, monitor, or store your VPN traffic. By using the app, you
+      agree to the practices described below.
+    </p>
+
+    <div class="callout">
+      <h2>Our No-Logs Promise</h2>
+      <p>
+        We do <strong>not</strong> log, monitor, inspect, record, or store any of your VPN
+        traffic — including the websites you visit, the apps you use, your DNS queries, or
+        the content of any data sent through the tunnel. Your online activity stays yours.
+      </p>
+    </div>
+
+    <h2>Information We Collect</h2>
+    <p>Go VPN has no user accounts and requires no sign-up. We collect only the minimum needed to provision a VPN connection:</p>
+    <ul>
+      <li class="yes"><strong>Anonymous device identifier</strong> — a randomly generated UUID created on your device on first launch. It is <strong>not</strong> linked to your name, email, phone number, or any personal identity, and is used solely to issue and re-use your VPN configuration.</li>
+      <li class="yes"><strong>Connection timestamps</strong> — the date and time a device requests a connection, used only to operate and maintain the service.</li>
+    </ul>
+
+    <h2>Information We Do NOT Collect</h2>
+    <p>We deliberately do not collect, log, or store any of the following:</p>
+    <ul>
+      <li class="no"><strong>Browsing history</strong> — the sites or services you access.</li>
+      <li class="no"><strong>DNS queries</strong> — the domains your device looks up.</li>
+      <li class="no"><strong>Traffic content</strong> — any data transmitted through the VPN tunnel.</li>
+      <li class="no"><strong>IP addresses</strong> — we do not record your originating or assigned IP address.</li>
+      <li class="no"><strong>Personal information</strong> — no name, email, phone number, location, or contacts.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>Go VPN relies on a small number of third-party providers. Each operates under its own privacy policy:</p>
+
+    <div class="third-party">
+      <h3>Google AdMob</h3>
+      <p>Serves the in-app advertisements that keep Go VPN free. AdMob may use device-level advertising identifiers to deliver and measure ads. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+    </div>
+
+    <div class="third-party">
+      <h3>Supabase</h3>
+      <p>Stores the anonymous device configuration (the UUID and VPN config) that lets your device reconnect. No personal data is stored. See the <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</p>
+    </div>
+
+    <h2>VPN Traffic</h2>
+    <p>
+      When connected, your traffic is encrypted and routed through our VPN server. We act
+      purely as a conduit: <strong>we do not log, monitor, or store any user traffic</strong>
+      passing through the tunnel. We cannot and do not associate any browsing activity with
+      your device.
+    </p>
+
+    <h2>Data Retention</h2>
+    <p>
+      The anonymous device identifier and connection timestamps are retained only for as long
+      as needed to operate the service. You can clear all locally stored data at any time by
+      uninstalling the app or clearing its data in Android settings.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      Go VPN is not directed to children under 13, and we do not knowingly collect personal
+      information from children. As we collect no personal information at all, the app does not
+      build any profile of any user.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Material changes will be reflected on
+      this page with a revised effective date. Continued use of the app after an update
+      constitutes acceptance of the revised policy.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+      Questions about this Privacy Policy or your data? Reach us at
+      <a class="mail" href="mailto:support@h93lab.com">support@h93lab.com</a>.
+    </p>
+
+    <footer>
+      <p><strong>Go VPN</strong> · <code>com.h93lab.govpn</code> · &copy; 2026 H93. All rights reserved.</p>
+      <p>Effective June 10, 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
